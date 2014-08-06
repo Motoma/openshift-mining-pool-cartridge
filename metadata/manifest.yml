@@ -1,6 +1,6 @@
 ---
 Name: mining-pool
-Cartridge-Short-Name: Mining Pool
+Cartridge-Short-Name: MiningPool
 Display-Name: OpenShift Mining Pool
 Description: The Mining Pool application type is a starting poing for builting a
   crypto-currency mining pool on the OpenShift infrastructure.
