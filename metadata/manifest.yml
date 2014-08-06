@@ -10,7 +10,9 @@ License-Url: http://www.apache.org/licenses/LICENSE-2.0.txt
 Cartridge-Version: 0.0.1
 Cartridge-Vendor: motoma
 Categories:
-- experimental
+ - service
+ - web_framework
+ - experimental
 Website: http://motoma.io
 Source-Url: https://github.com/Motoma/openshift-mining-pool-cartridge.git
 Provides:
