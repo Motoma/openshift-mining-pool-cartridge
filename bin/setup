@@ -7,4 +7,4 @@ case "$1" in
     version="$2"
 esac
 
-client_result "Disclaimer: This is an experimental cartridge that provides a way to try unsupported languages, frameworks, and middleware on OpenShift."
+client_result "Disclaimer: This is an experimental cartridge which comes with no guarantees. For commercial support, contact motoma@gmail.com."
