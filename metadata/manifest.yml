@@ -1,7 +1,7 @@
 ---
 Name: mining-pool
-Cartridge-Short-Name: Pool
-Display-Name: Mining Pool
+Cartridge-Short-Name: Mining Pool
+Display-Name: OpenShift Mining Pool
 Description: The Mining Pool application type is a starting poing for builting a
   crypto-currency mining pool on the OpenShift infrastructure.
 Version: '0.1'
@@ -16,6 +16,8 @@ Categories:
 Website: http://motoma.io
 Source-Url: https://github.com/Motoma/openshift-mining-pool-cartridge.git
 Provides:
+- diy-1.0
+- diy
 - mining
 - redis
 - bitcoind
