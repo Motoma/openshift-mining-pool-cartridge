@@ -36,16 +36,21 @@ Group-Overrides:
   - bitcoind
 Endpoints:
 - Private-IP-Name: INTERNAL_IP
-  Private-Port-Name: INTERNAL_PORT
-  Private-Port: 3333
-  Public-Port-Name: PUBLIC_PORT
+  Private-Port-Name: HTTP_PORT
+  Private-Port: 8080
+  Public-Port-Name: HTTP_PROXY_PORT
   Options:
     primary: true
   Mappings:
   - Frontend: ''
-    Backend: ''
-    Options:
-      noproxy: true
+    Backend: ''  
+- Private-IP-Name: INTERNAL_IP
+  Private-Port-Name: INTERNAL_PORT
+  Private-Port: 33333
+  Public-Port-Name: STRATUM_PORT
+  Options:
+    ssl_to_gear: true
+    noproxy: true
 - Private-IP-Name: IP
   Private-Port-Name: BITCOIND_RPC_PORT
   Private-Port: 8332
