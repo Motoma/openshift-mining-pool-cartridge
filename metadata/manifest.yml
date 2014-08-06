@@ -1,29 +1,23 @@
 ---
-Name: diy
-Cartridge-Short-Name: DIY
-Display-Name: Do-It-Yourself 0.1
-Description: The Do-It-Yourself (DIY) application type is a blank slate for trying
-  unsupported languages, frameworks, and middleware on OpenShift. See the community
-  site for examples of bringing your favorite framework to OpenShift.
+Name: mining-pool
+Cartridge-Short-Name: Pool
+Display-Name: Mining Pool
+Description: The Mining Pool application type is a starting poing for builting a
+  crypto-currency mining pool on the OpenShift infrastructure.
 Version: '0.1'
 License: ASL 2.0
 License-Url: http://www.apache.org/licenses/LICENSE-2.0.txt
-Cartridge-Version: 0.0.13
-Compatible-Versions:
-- 0.0.10
-- 0.0.11
-- 0.0.12
-Cartridge-Vendor: redhat
-Vendor: redhat
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: @Motoma
+Vendor: @motoma
 Categories:
-- web_framework
 - experimental
-Website: 
-Help-Topics:
-  Getting Started: https://www.openshift.com/videos/getting-started-with-diy-applications-on-openshift
+Website: http://motoma.io
+Source-Url: https://github.com/Motoma/openshift-mining-pool-cartridge.git
 Provides:
-- diy-0.1
-- diy
+- mining
+- redis
+- bitcoind
 Publishes: 
 Subscribes:
   set-env:
@@ -31,10 +25,12 @@ Subscribes:
     Required: false
 Scaling:
   Min: 1
-  Max: 1
+  Max: -1
 Group-Overrides:
 - components:
-  - web-proxy
+  - mining
+  - redis
+  - bitcoind
 Endpoints:
 - Private-IP-Name: INTERNAL_IP
   Private-Port-Name: INTERNAL_PORT
@@ -53,5 +49,3 @@ Endpoints:
 - Private-IP-Name: IP
   Private-Port-Name: BITCOIND_P2P_PORT
   Private-Port: 8333
-  
-
