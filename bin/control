@@ -42,6 +42,8 @@ function reload() {
 
 function tidy() {
   client_message "Cleaning up Mining Pool."
+  client_message "Removing python virtualenv in $OPENSHIFT_DATA_DIR/python-environment"
+  rm -rf $OPENSHIFT_DATA_DIR/python-environment
 }
 
 case "$1" in

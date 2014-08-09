@@ -51,9 +51,15 @@ Endpoints:
   Options:
     ssl_to_gear: true
     noproxy: true
-- Private-IP-Name: IP
-  Private-Port-Name: BITCOIND_RPC_PORT
-  Private-Port: 8332
-- Private-IP-Name: IP
-  Private-Port-Name: BITCOIND_P2P_PORT
-  Private-Port: 8333
+- Private-IP-Name: LOCALONLY_IP
+  Private-Port-Name: STRATUM_1
+  Private-Port: 10001
+- Private-IP-Name: LOCALONLY_IP
+  Private-Port-Name: STRATUM_2
+  Private-Port: 10002
+- Private-IP-Name: LOCALONLY_IP
+  Private-Port-Name: STRATUM_3
+  Private-Port: 10003
+- Private-IP-Name: LOCALONLY_IP
+  Private-Port-Name: STRATUM_4
+  Private-Port: 10004
